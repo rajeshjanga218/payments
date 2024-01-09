@@ -7,15 +7,15 @@ const SideBar = () => {
     },
     {
         sectionName:"Orders",
-        iconUrl : "/svg/home.svg"
+        iconUrl : "/svg/documentList.svg"
     },
     {
         sectionName:"Products",
-        iconUrl : "/svg/home.svg"
+        iconUrl : "/svg/sqaures.svg"
     },
      {
         sectionName:"Delivery",
-        iconUrl : "/svg/home.svg"
+        iconUrl : "/svg/vehicle.svg"
     },
     {
         sectionName:"Marketing",
@@ -23,7 +23,7 @@ const SideBar = () => {
     },
      {
         sectionName:"Analytics",
-        iconUrl : "/svg/home.svg"
+        iconUrl : "/svg/analytics.svg"
     },
     {
         sectionName:"Payments",
@@ -31,7 +31,7 @@ const SideBar = () => {
     },
      {
         sectionName:"Tools",
-        iconUrl : "/svg/home.svg"
+        iconUrl : "/svg/cursor.svg"
     },
     {
         sectionName:"Discounts",
@@ -39,7 +39,7 @@ const SideBar = () => {
     },
      {
         sectionName:"Audience",
-        iconUrl : "/svg/home.svg"
+        iconUrl : "/svg/user.svg"
     },
     {
         sectionName:"Apperance",
@@ -47,7 +47,7 @@ const SideBar = () => {
     },
      {
         sectionName:"Plugins",
-        iconUrl : "/svg/home.svg"
+        iconUrl : "/svg/bolt.svg"
     },
     
 
