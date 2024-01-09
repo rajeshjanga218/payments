@@ -13,7 +13,7 @@ const Transaction = () => {
                 </div>
                 
                 <div className='flex gap-2'>
-                <div className='border border-gray-300 bg-gray-100 flex gap-2 justify-center items-center p-1 rounded-md'>
+                <div className='border border-gray-300 bg-gray-100 flex justify-center items-center pl-2 rounded-md'>
                     <p>Sort</p>
                     <div className='flex justify-center items-center pr-1 pl-2'>
                         <img src='/svg/longArrowDown.svg' alt='arrow-down' className='h-4 w-4'/>
