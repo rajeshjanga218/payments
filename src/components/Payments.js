@@ -4,11 +4,10 @@ import SideBar from './SideBar'
 
 const Payments = () => {
   return (
-    <div className='h-full w-full grid grid-cols-6 bg-red-200 p-2'>
+    <div className='h-full w-full grid grid-cols-5'>
       <SideBar/>
       <MainContainer/>
     </div>
-    
   )
 }
 

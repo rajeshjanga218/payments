@@ -1,31 +1,31 @@
 import React from 'react'
+import Pagination from './Pagination'
 
 const Transaction = () => {
   return (
-    <div>
-        <h1 className=''>Transactions | This Month</h1>
-        <div className='bg-white p-2 flex flex-col gap-2'>
+    <div className='flex flex-col gap-2'>
+        <h1 className='font-bold'>Transactions | This Month</h1>
+        <div className='bg-white p-3 flex flex-col gap-3 rounded-md'>
             <div className='flex justify-between'>
-                <div className='relative flex w-1/3 items-center '>
+                <div className='relative flex w-1/3 items-center rounded-md'>
                     <img src='/svg/searcIcon.svg' alt='searchicon' className='w-5 h-5 absolute left-2'/>
-                    <input type='text' placeholder="Seacrh features, tutorials, etc. " className='pl-8 w-full h-full bg-gray-100 rounded-sm' />
+                    <input type='text' placeholder="Seacrh by order ID..." className='pl-8 w-full h-full bg-gray-100 rounded-sm' />
                 </div>
                 
-                    <div className='flex gap-2'>
-                    <div className='border border-gray-300 bg-gray-100 flex gap-2 justify-center items-center p-1 rounded-md'>
-                        <p>Sort</p>
-                        <div className='flex'>
-                            <img src='/svg/longArrowDown.svg' alt='arrow-down' className='h-5 w-5'/>
-                            <img src='/svg/longArrowUp.svg' alt='arrow-up' className='h-5 w-5 -ml-3'/>
-                        </div>
-                    
-                    </div>
-                    <div className='p-1 border border-gray-300 bg-gray-100 rounded-md'>
-                        <img src="/svg/arrowDownTray.svg" alt='arrow' className='w-6 h-6'/>
+                <div className='flex gap-2'>
+                <div className='border border-gray-300 bg-gray-100 flex gap-2 justify-center items-center p-1 rounded-md'>
+                    <p>Sort</p>
+                    <div className='flex justify-center items-center pr-1 pl-2'>
+                        <img src='/svg/longArrowDown.svg' alt='arrow-down' className='h-4 w-4'/>
+                        <img src='/svg/longArrowUp.svg' alt='arrow-up' className='h-4 w-4 -ml-2'/>
                     </div>
                 </div>
+                <div className='px-2 flex justify-center items-center border border-gray-300 bg-gray-100 rounded-md'>
+                    <img src="/svg/arrowDownTray.svg" alt='arrow' className='w-4 h-4'/>
+                </div>
+                </div>
             </div>
-      
+        
             <div class="relative overflow-x-auto">
                 <table class="w-full text-sm text-left rtl:text-right">
                     <thead class="text-xs text-gray-700 bg-gray-50">
@@ -65,11 +65,10 @@ const Transaction = () => {
                                 $22
                             </td>
                         </tr>)}
-                       
-                    
                     </tbody>
                 </table>
             </div>
+            <Pagination/>
         </div>
     </div>
   )
