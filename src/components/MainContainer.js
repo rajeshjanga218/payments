@@ -1,13 +1,16 @@
 import React from 'react'
 import PaymentsHeader from './PaymentsHeader'
 import Transaction from './Transaction'
+import Pagination from './Pagination'
+// import Pagination from './Pagination'
+
 
 const MainContainer = () => {
   return (
     <div className='col-span-5'>
         <PaymentsHeader />
         <div className='p-2'>
-        <div className=''>
+        <div className='bg-white'>
           <div className='flex justify-between '>
             <h1 className=''>Overview</h1>
             <select className='rounded-md p-1'>
@@ -28,6 +31,8 @@ const MainContainer = () => {
           </div>
 
         <Transaction/>
+
+        <Pagination/>
 
         </div>
         </div>
