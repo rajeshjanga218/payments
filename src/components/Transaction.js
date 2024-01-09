@@ -38,15 +38,14 @@ const Transaction = () => {
                                     <option selected>Order date</option>
                                 </select>
                             </th>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" class="px-6 py-3 ">
                                 Order amount
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                <div className='flex gap-1'>
+                                <div className='flex gap-1 '>
                                     <p>  Transaction fees</p>
                                     <img src='/svg/informationCircle.svg' alt='transaction' className='w-4 h-4'/>
                                 </div>
-                            
                             </th>
                         </tr>
                     </thead>
@@ -58,10 +57,10 @@ const Transaction = () => {
                             <td class="px-6 py-4">
                                 7 July, 2023
                             </td>
-                            <td class="px-6 py-4">
+                            <td class="px-8 py-4">
                                 ₹1,278.23
                             </td>
-                            <td class="px-6 py-4">
+                            <td class="px-16 py-4 ">
                                 $22
                             </td>
                         </tr>)}

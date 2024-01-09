@@ -52,7 +52,7 @@ const SideBar = () => {
 ]
 
   return (
-    <div className='col-span-1 flex flex-col justify-between bg-gray-900 text-white p-2'>
+    <div className='col-span-1 flex flex-col justify-between bg-gray-900 text-white p-2 py-4'>
         <div className='flex flex-col gap-6'>
             <div className='flex justify-between items-center'>
                 <div className='flex gap-3 items-center'>
@@ -65,14 +65,14 @@ const SideBar = () => {
                 <img src='/svg/downArrow.svg' className='w-6 h-6'/>
             </div>
             <ul className='flex flex-col gap-4'>
-                {data.map((item,index)=><li className='flex gap-2' key={index}>
+                {data.map((item,index)=><li className={`flex gap-2 p-2 ${item.sectionName==="Payments" &&"bg-gray-700 rounded-md "}`} key={index}>
                     <img src={item.iconUrl} alt='' className="w-6 h-6 text-white"/>
                     <p>{item.sectionName}</p>
                 </li>)}
                 
             </ul>
         </div>
-        <div className='flex gap-2 items-center bg-gray-600 opacity-60 rounded-md p-2'>
+        <div className='flex gap-2 items-center bg-gray-700 rounded-md p-2'>
             <img src='/svg/card.svg' about='alt' className='w-6 h-6'/>
             <div>
                 <p>Available credits</p>
